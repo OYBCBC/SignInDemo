@@ -17,4 +17,8 @@
     <color name="itemlist">#f4f4f4</color>
     <color name="watermark_hint">#ccffffff</color>
     <color name="act_background">#efefef</color>
+
+    <color name="cutePink">#FFEC9595</color>
+    <color name="dpblue">#2e65d6</color>
+
 </resources>

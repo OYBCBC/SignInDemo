@@ -2,9 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-
-    >
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -25,7 +23,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/user_id"
-                android:textColor="#fff" />
+                />
 
         </android.support.design.widget.TextInputLayout>
 
@@ -42,7 +40,7 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/user_password"
                 android:inputType="textPassword"
-                android:textColor="#fff" />
+               />
         </android.support.design.widget.TextInputLayout>
 
 
@@ -72,16 +70,6 @@
             <!--/>-->
         </RelativeLayout>
 
-        <Button
-            android:id="@+id/login_button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:layout_marginRight="40dp"
-            android:layout_marginTop="10dp"
-            android:background="#6b8bdc"
-            android:text="@string/login" />
-
         <TextView
 
             android:id="@+id/no_account"
@@ -93,6 +81,26 @@
             android:text="@string/no_id"
             android:textColor="#b9b9b9" />
 
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true">
+
+            <!--<com.bcoder.signindemo.view.button.CircleButton-->
+                <!--android:id="@+id/button_test"-->
+                <!--android:layout_width="220dp"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_marginBottom="100dp"-->
+                <!--android:text="登陆"-->
+                <!--android:textColor="#fff" />-->
+
+        </RelativeLayout>
+
 
     </LinearLayout>
+
+
 </LinearLayout>

@@ -57,9 +57,7 @@ public class MainAcitivity extends AppCompatActivity implements View.OnClickList
                     latitude = aMapLocation.getLatitude();
 
                     LatLng latLng = new LatLng(latitude, longitude);
-
-
-
+                    double d = measureDistance(latLng, OFFICE_1);
 
                     String address = aMapLocation.getAddress();
                     String msg = country + province + city + district + street + streetnum + "longitude/n" + longitude + "latitude/n" + latitude;
@@ -68,7 +66,7 @@ public class MainAcitivity extends AppCompatActivity implements View.OnClickList
                     tvLocation.setText("longitude: " + longitude + '\n' +
                             "latitude: " + latitude + '\n' +
                             "address" + address + '\n' +
-                            "distance" + measureDistance(latLng, OFFICE_1)
+                            "distance" + d
                     );
 
 
@@ -143,6 +141,7 @@ public class MainAcitivity extends AppCompatActivity implements View.OnClickList
             //设置场景模式后最好调用一次stop，再调用start以保证场景模式生效
             mLocationClient.stopLocation();
             mLocationClient.startLocation();
+
         }
 
 
