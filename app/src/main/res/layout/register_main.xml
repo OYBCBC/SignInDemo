@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/register_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/register_user_id_til"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/register_user_id_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/user_id"
+                android:lines="1"
+                android:textColor="#fff"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <!--注册的密码-->
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/register_pass_once_til"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/register_user_id_til">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/register_pass_once_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/user_password"
+                android:inputType="textPassword"
+                android:lines="1"
+                android:textColor="#fff" />
+        </android.support.design.widget.TextInputLayout>
+
+        <!--确认注册密码-->
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/register_pass_confirm_til"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/register_pass_once_til">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/register_pass_confirm_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/confirm_pass"
+                android:inputType="textPassword"
+                android:lines="1"
+                android:textColor="#fff" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/register_button"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/register"
+            android:background="#6b8bdc"/>
+
+    </LinearLayout>
+</LinearLayout>
