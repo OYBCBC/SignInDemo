@@ -6,13 +6,11 @@ import android.os.Build;
 import android.os.Handler;
 import android.support.annotation.RequiresApi;
 import android.support.design.widget.TextInputEditText;
-import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.AppCompatCheckBox;
 import android.view.View;
 import android.view.ViewAnimationUtils;
-import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -46,11 +44,10 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
 
     private void bindLoginButtonViews() {
-        loginButton = findViewById(R.id.button_test);
+        loginButton = findViewById(R.id.button_login);
         rlContent = findViewById(R.id.rl_content);
         rlContent.getBackground().setAlpha(0);
         handler = new Handler();
-
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -65,7 +62,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                         gotoNew();
                     }
                 }, 3000);
-
             }
         });
     }

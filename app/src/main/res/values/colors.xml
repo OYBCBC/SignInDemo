@@ -21,4 +21,7 @@
     <color name="cutePink">#FFEC9595</color>
     <color name="dpblue">#2e65d6</color>
 
+    <color name="text_color_normal">#fff</color>
+    <color name="text_color_selected">#2e65d6</color>
+
 </resources>

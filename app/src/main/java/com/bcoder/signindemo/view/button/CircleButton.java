@@ -60,7 +60,7 @@ public class CircleButton extends android.support.v7.widget.AppCompatButton {
         backDrawable.setCornerRadius(120);
         setBackground(backDrawable);
 
-        setText("登陆");
+//        setText("登陆");
 
         paint=new Paint();
         paint.setColor(getResources().getColor(R.color.white));

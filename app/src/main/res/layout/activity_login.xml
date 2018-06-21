@@ -41,7 +41,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
     <com.bcoder.signindemo.view.button.CircleButton
-        android:id="@+id/button_test"
+        android:id="@+id/button_login"
         android:layout_width="220dp"
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"

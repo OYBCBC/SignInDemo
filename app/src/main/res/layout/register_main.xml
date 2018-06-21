@@ -22,7 +22,7 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/user_id"
                 android:lines="1"
-                android:textColor="#fff"
+
                 />
         </android.support.design.widget.TextInputLayout>
 
@@ -39,8 +39,7 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/user_password"
                 android:inputType="textPassword"
-                android:lines="1"
-                android:textColor="#fff" />
+                android:lines="1" />
         </android.support.design.widget.TextInputLayout>
 
         <!--确认注册密码-->
@@ -56,19 +55,18 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/confirm_pass"
                 android:inputType="textPassword"
-                android:lines="1"
-                android:textColor="#fff" />
+                android:lines="1" />
         </android.support.design.widget.TextInputLayout>
 
-        <Button
-            android:layout_marginTop="10dp"
-            android:id="@+id/register_button"
-            android:layout_marginLeft="40dp"
-            android:layout_marginRight="40dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/register"
-            android:background="#6b8bdc"/>
+        <!--<Button-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:id="@+id/register_button"-->
+        <!--android:layout_marginLeft="40dp"-->
+        <!--android:layout_marginRight="40dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/register"-->
+        <!--android:background="#6b8bdc"/>-->
 
     </LinearLayout>
 </LinearLayout>
